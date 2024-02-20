@@ -1,4 +1,4 @@
-name: Build SinMal's Kernal4.4 Padavan
+name: Build SinMalDev's Kernal-4.4 Padavan
 
 on:
   workflow_dispatch:
