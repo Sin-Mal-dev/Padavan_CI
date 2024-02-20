@@ -92,7 +92,7 @@ on:
         default: 'false'
 env:
   REPOSITORY_URL: https://github.com/Sin-Mal-dev/Padavan-KVR.git
-  WORK_PATH: /opt/padavan-3.4
+  WORK_PATH: /opt/padavan-4.4
   TIME_ZONE: Asia/Shanghai
   FIRMWARE_DATEPREFIX: $(date +"%Y%m%d")
   FIRMWARE_AUTHOR: Sin-Mal-dev
@@ -291,8 +291,8 @@ jobs:
       run: |
         cp -f toolchain/mipsel-linux-uclibc-gcc10.tar.xz $WORK_PATH
         cd $WORK_PATH
-        mkdir -p toolchain-mipsel/toolchain-3.4.x
-        tar -Jxvf mipsel-linux-uclibc-gcc10.tar.xz -C toolchain-mipsel/toolchain-3.4.x
+        mkdir -p toolchain-mipsel/toolchain-4.4.x
+        tar -Jxvf mipsel-linux-uclibc-gcc10.tar.xz -C toolchain-mipsel/toolchain-4.4.x
     - name: Custom Lan IP
       run: |
         cp -f bashScripts/setlanip.sh $WORK_PATH/trunk
