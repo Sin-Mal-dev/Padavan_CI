@@ -484,7 +484,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: env.STATUS == 'success'
       with:
-        name: Padavan44-packages
+        name: Padavan34-packages
         path: ${{ env.FIRMWARE }}
     - name: Upload firmware to anonfiles
       if: env.STATUS == 'success' && github.event.inputs.uploadanon == 'true'
