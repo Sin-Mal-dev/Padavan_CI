@@ -84,7 +84,7 @@ on:
         default: 'false'
       firmwarever:
         description: 'firmware''s version'
-        required: true
+        required: false
         default: 'ILY'
       uploadanon:
         type: boolean
